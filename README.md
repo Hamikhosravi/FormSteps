@@ -1,6 +1,9 @@
 ## Explanation
 
-I know both Options Api and Composition API, but I used Option's API to do this project.
+Check the result of this project by clicking [Here](https://formSteps.hamikhosravi.com/)
+
+I know both Options Api and Composition API, but I used Option's api to do this project.
+
 I typically adhere to the SOLID Principles when working on projects. For example, I prioritize creating reusable components, such as an Input component, which I then integrate into other components like Description and Wizard. Since the provided project only required these two components, I focused on implementing and optimizing them. I refrained from adding any extra components and simply commented unnecessary files to maintain simplicity and efficiency.
 
 -----------------------------------------------------
