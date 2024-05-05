@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1 class="underline">
+    <h1 class="underline bg-blue-500">
       Hello world!
     </h1>
     <Wizard />
