@@ -4,8 +4,8 @@
         <p class="text-lg font-bold mb-2">Description</p>
         <input type="text" id="description" v-model="text" class="border rounded-md p-2 w-full max-w-80" />
         <transition name="fade" mode="out-in">
-        <p v-if="isBalanced(text)" class="text-green-500 mt-1">The text is balanced.</p>
-        <p v-else class="text-red-500 mt-1">The text is not balanced.</p>
+            <p v-if="isBalanced(text)" class="text-green-500 mt-1">The text is balanced.</p>
+            <p v-else class="text-red-500 mt-1">The text is not balanced.</p>
         </transition>
     </div>
 </template>

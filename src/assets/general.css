@@ -1,3 +1,19 @@
+#app {
+    max-width: 1280px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+*,*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/*Fade transition*/
 .fade-leave-to {
     opacity: 0;
     transform: translateX(-100px);
@@ -12,3 +28,5 @@
 .fade-leave-active {
     transition: all 0.3s ease-out;
 }
+
+

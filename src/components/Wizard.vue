@@ -4,7 +4,7 @@
         <transition name="fade" mode="out-in">
             <!-- Step 1: Username -->
             <div v-if="step === 1" class="mt-4 pb-8 relative w-full">
-                <p class="text-lg font-bold">Step: username</p>
+                <p class="text-lg font-bold">Step: Username</p>
                 <input type="text" id="username" name="username" v-model="formData.username" @input="validateInputs"
                        class="border rounded-md p-2 mt-2 w-full max-w-80" />
                 <transition name="fade" mode="out-in">
@@ -14,18 +14,18 @@
 
             <!-- Step 2: Email -->
             <div v-else-if="step === 2" class="mt-4 pb-8 relative w-full">
-                <p class="text-lg font-bold">Step: email</p>
+                <p class="text-lg font-bold">Step: Email</p>
                 <input type="text" id="email" name="email" v-model="formData.email" @input="validateInputs"
                        class="border rounded-md p-2 mt-2 w-full max-w-80" />
                 <transition name="fade" mode="out-in">
-                <p v-if="!isEmailValid" class="text-red-500 absolute bottom-0 right-0 left-0">Please enter a valid email
+                    <p v-if="!isEmailValid" class="text-red-500 absolute bottom-0 right-0 left-0">Please enter a valid email
                     address.</p>
                 </transition>
             </div>
 
             <!-- Step 3: Review -->
             <div v-else class="mt-4 w-full">
-                <p class="text-lg font-bold">Step: review</p>
+                <p class="text-lg font-bold">Step: Review</p>
                 <p>Username: {{ formData.username }}</p>
                 <p>Email: {{ formData.email }}</p>
             </div>
