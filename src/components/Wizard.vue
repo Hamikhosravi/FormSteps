@@ -1,7 +1,6 @@
 <template>
-    <div class="h-screen w-full">
-        <section class="h-2/4 flex flex-col items-center justify-center">
-        <transition name="fade" mode="out-in">
+        <section class="flex flex-col items-center justify-center">
+            <transition name="fade" mode="out-in">
             <!-- Step 1: Username -->
             <div v-if="step === 1" class="mt-4 pb-8 relative w-full">
                 <p class="text-lg font-bold">Step: Username</p>
@@ -33,17 +32,14 @@
 
         <!-- Navigation buttons -->
             <div class="flex">
-        <button id="btn-prev" @click="prevStep" :disabled="step === 1"
-                :class="{ 'disabled:opacity-50 cursor-not-allowed': step === 1 }"
-                class="mt-2 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded mr-2">Prev</button>
-        <button id="btn-next" @click="nextStep" :disabled="step === 3 || !isStepFilled"
-                :class="{ 'disabled:opacity-50 cursor-not-allowed': step === 3 || !isStepFilled }"
-                class="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Next</button>
+                <button id="btn-prev" @click="prevStep" :disabled="step === 1"
+                        :class="{ 'disabled:opacity-50 cursor-not-allowed': step === 1 }"
+                        class="mt-2 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded mr-2">Prev</button>
+                <button id="btn-next" @click="nextStep" :disabled="step === 3 || !isStepFilled"
+                        :class="{ 'disabled:opacity-50 cursor-not-allowed': step === 3 || !isStepFilled }"
+                        class="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Next</button>
             </div>
         </section>
-        <hr />
-        <Description class="h-2/4"/>
-    </div>
 </template>
 
 <script>
@@ -68,7 +64,7 @@
         methods: {
             nextStep() {
                 if (this.step < 3) this.step++;
-this.checkStepsValidation();
+                this.checkStepsValidation();
             },
             prevStep() {
                 if (this.step > 1) this.step--;
