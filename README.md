@@ -1,3 +1,9 @@
+## Explanation
+
+I typically adhere to the SOLID Principles when working on projects. For example, I prioritize creating reusable components, such as an Input component, which I then integrate into other components like Description and Wizard. Since the provided project only required these two components, I focused on implementing and optimizing them. I refrained from adding any extra components and simply deleted unnecessary files to maintain simplicity and efficiency.
+
+-----------------------------------------------------
+
 # Registration Form
 
 This project is a simple form that needs to be implemented with a focus on meeting the requirements of the Product team. 
@@ -67,3 +73,4 @@ We need a registration form that has three steps.
 ## Bonus
 - Modify the warning based on logs/interface messages during development.
 - Implementation of a suitable interface using tailwind css.
+

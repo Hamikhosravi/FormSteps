@@ -1,8 +1,12 @@
+<!-- Description.vue -->
 <template>
-    <div>
-        <input type="text" id="description" v-model="text" />
-        <p v-if="isBalanced(text)">{{ balancedMessage }}</p>
-        <p v-else>{{ unbalancedMessage }}</p>
+    <div class="mt-4 pb-8 flex flex-col items-center justify-center">
+        <p class="text-lg font-bold mb-2">Description</p>
+        <input type="text" id="description" v-model="text" class="border rounded-md p-2 w-full max-w-80" />
+        <transition name="fade" mode="out-in">
+        <p v-if="isBalanced(text)" class="text-green-500 mt-1">The text is balanced.</p>
+        <p v-else class="text-red-500 mt-1">The text is not balanced.</p>
+        </transition>
     </div>
 </template>
 
@@ -10,9 +14,7 @@
     export default {
         data() {
             return {
-                text: '',
-                balancedMessage: 'The text is balanced.',
-                unbalancedMessage: 'The text is not balanced.'
+                text: ''
             };
         },
         methods: {
@@ -39,3 +41,6 @@
         }
     };
 </script>
+
+<style scoped>
+</style>
